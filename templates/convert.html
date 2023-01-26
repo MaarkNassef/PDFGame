@@ -1,9 +1,0 @@
-{% extends 'base.html' %}
-{% block title %}Convesion{% endblock %}
-{% block content %}
-<h1 class="display-5 text-center">Download your pdf file</h1>
-<div class="text-center mt-3">
-    <a class="btn btn-success text-decoration-none" href="{{url_for('download_file', filepath=filepath)}}" download>Download Now</a>
-    <button class="btn btn-dark" onclick="location.href='/remove/{{filepath}}'">Home</button>
-</div>
-{% endblock %}
